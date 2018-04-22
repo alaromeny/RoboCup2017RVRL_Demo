@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+ <launch>
+
+  <param name="use_sim_time" value="true" />
+  <rosparam file="$(find rc2017rvrl)/mappingROS.yaml"/>
+
+  <node name="Mapper" pkg="nav2d_karto" type="mapper">
+    <remap from="scan" to="/robot0/hokuyo"/>
+    <rosparam file="$(find rc2017rvrl)/mapper.yaml"/>
+  </node>
+
+</launch>
+
+

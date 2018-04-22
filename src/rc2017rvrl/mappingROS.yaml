@@ -1,0 +1,16 @@
+###########################################################
+# Defines topics services and frames for all modules
+
+### TF frames #############################################
+laser_frame: /robot0/hokuyo_frame
+robot_frame: /robot0/base_link
+odometry_frame: /robot0/odom
+offset_frame: offset
+map_frame: map
+
+### ROS topics ############################################
+map_topic: map
+laser_topic: /robot0/hokuyo
+
+### ROS services ##########################################
+map_service: static_map
